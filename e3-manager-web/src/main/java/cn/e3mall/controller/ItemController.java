@@ -16,10 +16,8 @@ import cn.e3mall.service.ItemService;
 
 /**
  * 商品管理 Controller
- * <p>Title: ItemController</p>
- * <p>Description: </p>
- *
- * @version 1.0
+ * Title: ItemController
+ * Version 1.0
  */
 @Controller
 public class ItemController {
@@ -34,6 +32,12 @@ public class ItemController {
         return tbItem;
     }
 
+    /**
+     * 查询商品列表
+     * @param page
+     * @param rows
+     * @return
+     */
     @RequestMapping("/item/list")
     @ResponseBody
     public EasyUIDataGridResult getItemList(Integer page, Integer rows) {

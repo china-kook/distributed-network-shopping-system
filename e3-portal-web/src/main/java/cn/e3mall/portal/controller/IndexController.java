@@ -14,10 +14,8 @@ import cn.e3mall.pojo.TbContent;
 
 /**
  * 首页展示Controller
- * <p>Title: IndexController</p>
- * <p>Description: </p>
- *
- * @version 1.0
+ * Title: IndexController
+ * Version 1.0
  */
 @Controller
 public class IndexController {
