@@ -14,7 +14,6 @@
     <modules>
         <module>e3-search-interface</module>
         <module>e3-search-service</module>
-        <module>../e3-search-web</module>
     </modules>
 
     <dependencies>
