@@ -29,11 +29,9 @@ public class SearchDao {
 
     /**
      * 根据查询条件查询索引库
-     * <p>Title: search</p>
-     * <p>Description: </p>
-     *
-     * @param query
-     * @return
+     * Title: search
+     * param query
+     * return
      */
     public SearchResult search(SolrQuery query) throws Exception {
 
