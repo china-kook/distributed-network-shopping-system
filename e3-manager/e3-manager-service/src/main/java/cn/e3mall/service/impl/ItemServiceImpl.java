@@ -3,12 +3,19 @@ package cn.e3mall.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
 
 import javax.annotation.Resource;
+import javax.jms.Destination;
+import javax.jms.JMSException;
+import javax.jms.Message;
+import javax.jms.Session;
+import javax.jms.TextMessage;
 
 import cn.e3mall.common.pojo.EasyUIDataGridResult;
 import cn.e3mall.common.utils.E3Result;
@@ -23,10 +30,8 @@ import cn.e3mall.service.ItemService;
 
 /**
  * 商品管理Service
- * <p>Title: ItemServiceImpl</p>
- * <p>Description: </p>
- *
- * @version 1.0
+ * Title: ItemServiceImpl
+ * version 1.0
  */
 @Service
 public class ItemServiceImpl implements ItemService {
@@ -36,6 +41,12 @@ public class ItemServiceImpl implements ItemService {
 
     @Resource
     private TbItemDescMapper itemDescMapper;
+
+    @Resource
+    private JmsTemplate jmsTemplate;
+
+    @Resource
+    private Destination topicDestination;
 
     @Override
     public TbItem getItemById(long itemId) {
@@ -80,7 +91,7 @@ public class ItemServiceImpl implements ItemService {
     @Override
     public E3Result addItem(TbItem item, String desc) {
         // 生成商品id
-        long itemId = IDUtils.genItemId();
+        final long itemId = IDUtils.genItemId();
 
         // 补全item的属性
         item.setId(itemId);
@@ -104,6 +115,16 @@ public class ItemServiceImpl implements ItemService {
 
         // 向商品描述表插入数据
         itemDescMapper.insert(itemDesc);
+
+        //发送商品添加消息
+        jmsTemplate.send(topicDestination, new MessageCreator() {
+
+            @Override
+            public Message createMessage(Session session) throws JMSException {
+                TextMessage textMessage = session.createTextMessage(itemId + "");
+                return textMessage;
+            }
+        });
 
         // 返回成功
         return E3Result.ok();
@@ -179,7 +200,7 @@ public class ItemServiceImpl implements ItemService {
 
         TbItem item1 = itemMapper.selectByPrimaryKey(itemId);
 
-        item1.setStatus((byte)2);
+        item1.setStatus((byte) 2);
         item1.setUpdated(new Date());
 
         itemMapper.updateByPrimaryKey(item1);
@@ -191,7 +212,7 @@ public class ItemServiceImpl implements ItemService {
     public E3Result reshelfItem(long itemId) {
         TbItem item1 = itemMapper.selectByPrimaryKey(itemId);
 
-        item1.setStatus((byte)1);
+        item1.setStatus((byte) 1);
         item1.setUpdated(new Date());
 
         itemMapper.updateByPrimaryKey(item1);
