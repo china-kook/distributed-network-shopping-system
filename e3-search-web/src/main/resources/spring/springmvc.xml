@@ -17,6 +17,9 @@
 
     <mvc:annotation-driven/>
 
+    <!-- 全局异常处理器 -->
+    <bean class="cn.e3mall.search.exception.GlobalExceptionResolver"/>
+
     <bean
         class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/"/>
