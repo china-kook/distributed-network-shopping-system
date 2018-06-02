@@ -89,6 +89,12 @@ public class ItemServiceImpl implements ItemService {
     }
 
     @Override
+    public TbItemDesc getItemDescById(long itemId) {
+        TbItemDesc tbItemDesc = itemDescMapper.selectByPrimaryKey(itemId);
+        return tbItemDesc;
+    }
+
+    @Override
     public E3Result addItem(TbItem item, String desc) {
         // 生成商品id
         final long itemId = IDUtils.genItemId();
