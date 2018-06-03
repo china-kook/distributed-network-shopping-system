@@ -51,7 +51,7 @@ public class LogoutController {
 //            return mappingJacksonValue;
 //        }
 
-        return "redirect:/page/logout";
+        return "login";
 
     }
 
