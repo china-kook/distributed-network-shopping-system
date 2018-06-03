@@ -16,6 +16,8 @@ out
 
 .idea/*
 
+/logs
+
 *.class
 
 */*.log
