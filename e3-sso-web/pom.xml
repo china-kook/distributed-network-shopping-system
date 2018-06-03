@@ -10,7 +10,7 @@
         <relativePath>../e3-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <version>1.0-SNAPSHOT</version>
     <artifactId>e3-sso-web</artifactId>
     <packaging>war</packaging>
 
