@@ -30,5 +30,8 @@
                    timeout="600000"/>
     <dubbo:service interface="cn.e3mall.sso.service.TokenService" ref="tokenServiceImpl"
                    timeout="600000"/>
+    <dubbo:service interface="cn.e3mall.sso.service.LogoutService" ref="logoutServiceImpl"
+                   timeout="600000"/>
+
 
 </beans>
