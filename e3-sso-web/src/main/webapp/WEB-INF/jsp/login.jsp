@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
-    <title>登录淘淘</title>
+    <title>登录</title>
     <link rel="stylesheet" type="text/css" href="/css/jquery.alerts.css"/>
     <link rel="stylesheet" type="text/css" href="/css/headerfooterindex.css"/>
     <link rel="stylesheet" type="text/css" href="/css/login.css"/>
@@ -191,5 +191,5 @@
         });
     });
 </script>
-
+</body>
 </html>
