@@ -130,14 +130,14 @@
                             <c:forEach items="${cartList }" var="cart" varStatus="status">
                                 <div class="orderPInfo">
                                     <div class="pItem">
-                                        <a href="http://localhost:8086/item/${cart.id}.html"
+                                        <a href="http://item.e3mall.cn/item/${cart.id}.html"
                                            target="_blank">
                                             <img src="${cart.image }"
                                                  style="width: 60px;height: 60px;"/>
                                         </a>
                                     </div>
                                     <div class="pItem pGoods">
-                                        <a href="http://localhost:8086/item/${cart.id}.html"
+                                        <a href="http://item.e3mall.cn/item/${cart.id}.html"
                                            target="_blank">${cart.title }</a>
                                     </div>
                                     <div class="pItem pPrice"

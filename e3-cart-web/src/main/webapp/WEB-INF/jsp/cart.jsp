@@ -73,7 +73,7 @@
                                     <div class="pItem pGoods">
                                         <div class="cart_pimg">
                                             <a target="_blank" title="${cart.title }"
-                                               href="http://localhost:8086/item/${cart.id }.html">
+                                               href="http://item.e3mall.cn/item/${cart.id }.html">
                                                 <img src="${cart.image }"
                                                      style="width: 60px;height: 60px;"/>
                                             </a>
@@ -81,7 +81,7 @@
                                         <div class="cart_pname">
                                             <div>
                                                 <a target="_blank"
-                                                   href="http://localhost:8086/item/${cart.id }.html">${cart.title }</a>
+                                                   href="http://item.e3mall.cn/item/${cart.id }.html">${cart.title }</a>
                                             </div>
                                             <div class="cdzg">产地直供</div>
                                         </div>
@@ -144,9 +144,9 @@
             </div>
         </div>
         <div class="cartJsuan">
-            <input onclick="javascript:document.location.href='http://localhost:8082'"
+            <input onclick="javascript:document.location.href='http://www.e3mall.cn'"
                    class="goshop" value="继续购物" type="button">
-            <input onclick="javascript:document.location.href='http://localhost:8092/order/order-cart.html'"
+            <input onclick="javascript:document.location.href='http://order.e3mall.cn/order/order-cart.html'"
                    class="jiesuan youxuan" value="去结算" type="button">
         </div>
     </div>

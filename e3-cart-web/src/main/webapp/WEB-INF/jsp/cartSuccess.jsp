@@ -27,7 +27,7 @@
             <input type="button" class="goshop" onclick="window.history.back();return false;"
                    value="返回"/>
             <input type="button" class="jiesuan youxuan"
-                   onclick="location.href='http://localhost:8090/cart/cart.html'" value="去购物车结算"/>
+                   onclick="location.href='http://cart.e3mall.cn/cart/cart.html'" value="去购物车结算"/>
         </div>
     </div>
 

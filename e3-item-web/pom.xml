@@ -109,6 +109,9 @@
                 <configuration>
                     <path>/</path>
                     <port>8086</port>
+                    <url>http://192.168.25.91:8080/manager/text</url>
+                    <username>tomcat</username>
+                    <password>tomcat</password>
                 </configuration>
             </plugin>
         </plugins>
