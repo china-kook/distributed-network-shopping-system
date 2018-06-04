@@ -102,7 +102,9 @@
                                             <input type="text" value="${cart.num }"
                                                    class="amount itemnum" itemPrice="${cart.price}"
                                                    itemId="${cart.id}" id="amountdanjian-0-229363"
-                                                   name="amount">
+                                                   name="amount"
+                                                   onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}"
+                                                   onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}">
                                             <a href="javascript:void(0);"
                                                class="cartCountBtn increment">+</a>
                                         </div>
@@ -110,7 +112,7 @@
                                     <div class="pItem pWeight">0.05kg<br></div>
                                     <div class="pItem pSubtotal">
                                         <span id="total_price" class="totalprice">¥<fmt:formatNumber
-                                                groupingUsed="true"
+                                                groupingUsed="false"
                                                 value="${cart.price / 100 * cart.num}"
                                                 maxFractionDigits="2" minFractionDigits="2"/></span>
                                     </div>
