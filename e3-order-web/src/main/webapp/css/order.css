@@ -200,7 +200,7 @@ a.bClose:hover{color:#FFF;text-decoration:none;}
 .orderSeparate div{padding:5px 20px;}
 .promoList{width:630px;}
 .promoItem{margin-bottom:10px;}
-.order-info{width:500px;position:absolute;right:0;line-height:24px;}
+.order-info{width:310px;position:absolute;right:0;line-height:24px;}
 *html .order-info{right:20px;}
 .priceitem{text-align:left;}
 .dmTip{display:block;width:17px;height:17px;background:url(../images/ordericons.png) no-repeat -36px 0;position:absolute;top:6px;left:106px;}

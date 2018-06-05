@@ -50,16 +50,17 @@
         <input type="hidden" name="orderShipping.receiverState" value="青岛"/>
         <input type="hidden" name="orderShipping.receiverCity" value="青岛"/>
         <input type="hidden" name="orderShipping.receiverDistrict" value="市北区"/>
-        <input type="hidden" name="orderShipping.receiverAddress" value="青岛市市北区普集路 普吉新区"/>
+        <input type="hidden" name="orderShipping.receiverAddress" value="青岛市市北区普集路18号 普吉新区"/>
     </form>
     <h3 class="orderHd">填写并核对订单信息</h3>
     <div id="userAddrId" class="orderTbody ">
-        <h3 class="orderTitle">收货人信息：<span class="addrAlter" style="display:inline;">[修改]</span>
+        <h3 class="orderTitle">收货人信息：
+            <span class="addrAlter" style="display:inline;"></span>
         </h3>
         <div class="orderItem">
             <div class="orderCurr" id="userAddress" style="display:block;">
                 <ul>
-                    <li>王加山&nbsp;&nbsp;&nbsp;&nbsp;15800888888&nbsp;&nbsp;&nbsp;&nbsp;青岛市&nbsp;&nbsp;市北区&nbsp;&nbsp;普集路
+                    <li>王加山&nbsp;&nbsp;&nbsp;&nbsp;15800888888&nbsp;&nbsp;&nbsp;&nbsp;青岛市&nbsp;&nbsp;市北区&nbsp;&nbsp;普集路18号
                         普吉新区
                     </li>
                 </ul>
@@ -68,7 +69,8 @@
     </div>
     <div id="payDataId" class="orderTbody">
         <h3 class="orderTitle">支付及配送方式：
-            <span class="addrAlter hide" style="display: inline;">[修改]</span>
+            <%--<span class="addrAlter hide" style="display: inline;">[修改]</span>--%>
+            <span class="addrAlter hide" style="display: inline;"></span>
         </h3>
         <div class="orderItem ">
             <div class="orderCurr" style="display: block;">
@@ -76,7 +78,7 @@
                 <div class="shipment">
                     <div class="shipOrder" id="ylsorder2">
                         <div class="sOrders">
-                            <span class="tOrder" na="chai1">订单1</span>
+                            <span class="tOrder" na="chai1">订单</span>
                             <div class="sOrders">
                                 <div class="scon">
                                     <strong>宜立方速运</strong>负责配送。<br>商品下单后尽快为您发货
@@ -94,7 +96,7 @@
     <div id="userInvoiceId" class="orderTbody">
         <a name="userInvoice"></a>
         <h3 class="orderTitle">发票信息：<span class="addrAlter" id="invoice_edit"
-                                          onclick="invoice_edit()">[修改]</span></h3>
+                                          onclick="invoice_edit()"></span></h3>
         <div class="orderItem">
             <div class="orderCurr invMsg">
                 <div id="p_inv_type">暂不需要发票</div>
@@ -105,7 +107,7 @@
     </div>
     <div class="orderTbody" style="width:958px;border-bottom:0 none;">
         <div class="backToCart"><a style=" text-decoration:underline;" target=""
-                                   href="/cart/index/">返回修改购物车</a></div>
+                                   href="http://cart.e3mall.cn/cart/cart.html">返回修改购物车</a></div>
         <h3 class="orderTitle">商品信息：</h3>
         <span class="clear"></span>
         <div class="orderPItem">
@@ -124,8 +126,8 @@
                                 <div class="tCol pPromotion">返现</div>
                                 <div class="tCol pInventory">库存状态</div>
                                 <div class="tCol pQuantity">数量</div>
-                                <div class="tCol pWeight">重量(含包装)</div>
                                 <div class="tCol pSubtotal">小计</div>
+                                <div class="tCol pWeight"></div>
                             </div>
                             <c:forEach items="${cartList }" var="cart" varStatus="status">
                                 <div class="orderPInfo">
@@ -149,14 +151,14 @@
                                     <div class="pItem pPromotion">¥0</div>
                                     <div class="pItem pInventory" pid="57111">现货</div>
                                     <div class="pItem pQuantity">${cart.num}</div>
-                                    <div class="pItem pWeight">0.72kg</div>
                                     <div class="pItem pSubtotal">
                                         ¥${cart.price / 100 * cart.num}</div>
+                                    <div class="pItem pWeight"></div>
                                     <span class="clear"></span>
                                 </div>
                             </c:forEach>
                             <div class="orderPInfo order_xj">
-                                <span class="sp1">运费小计：</span> <span class="sp2">¥10</span>
+                                <span class="sp1">运费小计：</span> <span class="sp2">¥ 0</span>
                             </div>
                         </div>
                     </div>
@@ -167,11 +169,10 @@
 
             <div id="ordercoupon1" class="ordercoupon"><span id="ordercoupon"></span></div>
             <div class="order-info" style="z-index: -1;">
-                <div class="orderWeight fl">商品总重量：0.72kg（含包装）</div>
                 <div id="priceitems" class="priceitem">
                     <dl class="fl">
                         <dd>
-                            <div>1 件商品，总商品金额：</div>
+                            <div>总商品金额：</div>
                             <span class="priceArea">¥<span id="yingProce">
 				<fmt:formatNumber value="${totalPrice / 100 }" maxFractionDigits="2"
                                   minFractionDigits="2" groupingUsed="true"/>
@@ -179,12 +180,12 @@
                         </dd>
                         <dd>
                             <div>运费金额：</div>
-                            <span class="priceArea">¥<span id="shopping_price">10</span></span>
+                            <span class="priceArea">¥<span id="shopping_price"> 0</span></span>
                         </dd>
                         <dd>
                             <div>应付总额：</div>
                             <span class="priceArea">¥<span id="allPrice">
-            	<fmt:formatNumber value="${totalPrice / 100 + 10}" maxFractionDigits="2"
+            	<fmt:formatNumber value="${totalPrice / 100}" maxFractionDigits="2"
                                   minFractionDigits="2" groupingUsed="true"/>
             </span></span>
                         </dd>
@@ -203,7 +204,7 @@
             <div class="orderAccount">
                 <span class="t">应付总额：</span>
                 <span class="p">¥</span>
-                <span id="countPrice" class="p"><fmt:formatNumber value="${totalPrice / 100 + 10}"
+                <span id="countPrice" class="p"><fmt:formatNumber value="${totalPrice / 100}"
                                                                   maxFractionDigits="2"
                                                                   minFractionDigits="2"
                                                                   groupingUsed="true"/>

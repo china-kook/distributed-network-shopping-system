@@ -38,7 +38,7 @@
     </div>   
 	<div class="pay_ment">
             	<div class="pay_name"><em class="floatleft">支付平台</em>
-        	<a href="http://www.e3mall.cn/www/143/141.html" class="pay_lj" target="_blank"><i class="floatleft"></i><em class="floatleft">了解银行限额</em></a>
+        	<a href="javascript:void(0)" class="pay_lj" target="_blank"><i class="floatleft"></i><em class="floatleft">了解银行限额</em></a>
         </div>
         <div class="pay_ment_0 clearfix">
         	<ul>
