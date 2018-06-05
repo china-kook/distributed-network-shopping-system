@@ -5,7 +5,7 @@
     <ul class="fr topTh">
       <li class="login" id="login">
       	<span id="loginbar" style="margin-right: 15px;">
-	      	<a href="http://sso.e3mall.cn/page/login">请登录</a>
+	      	<a id="itemLogin" href="">请登录</a>
       	</span>
         <a href="http://sso.e3mall.cn/page/register">免费注册</a>
       </li>
@@ -29,4 +29,17 @@
   </div>
   <script type="text/javascript" src="/js/e3mall.js"></script>
   <script type="text/javascript" src="/js/jquery.cookie.js"></script>
+
+  <script type="application/javascript">
+
+      $(function () {
+
+          var itemLogin = window.location.href;
+
+          $("#itemLogin").attr('href', "http://sso.e3mall.cn/page/login?redirect=" + itemLogin);
+          console.log(itemLogin);
+
+      });
+
+  </script>
 </div>
