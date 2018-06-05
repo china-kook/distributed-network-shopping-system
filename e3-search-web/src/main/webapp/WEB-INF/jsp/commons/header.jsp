@@ -22,25 +22,6 @@
                        autocomplete="off">
                 <input type="button" value="" class="submit" onclick="search_keys('searchForm')">
             </form>
-            <div class="search_hot"><a target="_blank"
-                                       href="javascript:void(0)">大闸蟹</a><a
-                    target="_blank"
-                    href="javascript:void(0)">石榴</a><a
-                    target="_blank"
-                    href="javascript:void(0)">松茸</a><a
-                    target="_blank"
-                    href="javascript:void(0)">牛排</a><a
-                    target="_blank"
-                    href="javascript:void(0)">白虾</a><a
-                    target="_blank"
-                    href="javascript:void(0)">全脂牛奶</a><a
-                    target="_blank"
-                    href="javascript:void(0)">洋河</a><a
-                    target="_blank"
-                    href="javascript:void(0)">绿豆</a><a
-                    target="_blank"
-                    href="javascript:void(0)">一品玉</a>
-            </div>
         </div>
         <div class="shopingcar" id="topCart">
             <s class="setCart"></s><a href="http://cart.e3mall.cn/cart/cart.html" class="t"
