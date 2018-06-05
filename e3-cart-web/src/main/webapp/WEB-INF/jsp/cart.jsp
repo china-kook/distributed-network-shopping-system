@@ -36,14 +36,13 @@
     </div>
     <div class="cartMain">
         <div class="cartThead">
-            <div class="tCol tCheckbox"><input name="acart_list_check" id="Zall" type="checkbox"
-                                               onclick="Zall(this)"> 全选
+            <div class="tCol tCheckbox">
             </div>
             <div class="tCol tGoods">商品</div>
             <div class="tCol tPrice">单价</div>
-            <div class="tCol tPromotion">优惠</div>
+            <div class="tCol tPromotion"></div>
             <div class="tCol tQuantity">数量</div>
-            <div class="tCol tWeight">重量(含包装)</div>
+            <div class="tCol tWeight"></div>
             <div class="tCol tSubtotal">小计</div>
             <div class="tCol tInventory">库存状态</div>
             <div class="tCol tOperator">操作</div>
@@ -52,8 +51,7 @@
 
             <div class="cartColumnhd">
                 <div class="cartCheckbox">
-                    <input name="cart_list_yx" id="Zpu" type="checkbox"
-                           onclick="PutongAll(this)">优选商品
+                    宜立方商品
                 </div>
             </div>
             <div class="cartList youxuan" id="all_putong">
@@ -67,8 +65,6 @@
                             <div class="cartPInfo" id="danjian-0-229363">
                                 <div class="clearit">
                                     <div class="pItem pCheckbox">
-                                        <input name="cart_list" class="putong"
-                                               value="danjian-0-229363" type="checkbox"/>
                                     </div>
                                     <div class="pItem pGoods">
                                         <div class="cart_pimg">
@@ -109,7 +105,7 @@
                                                class="cartCountBtn increment">+</a>
                                         </div>
                                     </div>
-                                    <div class="pItem pWeight">0.05kg<br></div>
+                                    <div class="pItem pWeight"><br></div>
                                     <div class="pItem pSubtotal">
                                         <span id="total_price" class="totalprice">¥<fmt:formatNumber
                                                 groupingUsed="false"
@@ -130,10 +126,7 @@
         </div>
         <div class="cartOrderCount" id="orderCount">
             <div class="cartButtons">
-                <input type="button" value="删除选中的商品" onclick="javascript:cartDelMore();"
-                       class="cartclear">
-                <input type="button" value="清空购物车" onclick="javascript:delAll('273fe391cb449af4');"
-                       class="cartclear">
+
             </div>
             <div class="cartTotalItem">
                 <span id="all_shopePrice">（不含运费）</span>&nbsp;&nbsp;&nbsp;&nbsp;商品总计：
