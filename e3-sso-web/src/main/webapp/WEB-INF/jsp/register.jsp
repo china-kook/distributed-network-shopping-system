@@ -29,7 +29,6 @@
 <!-- reg_main -->
 <div class="tabBox clear">
     <span class="reg_hide reg_show regMr5" id="regper">个人用户</span>
-    <span class="reg_hide" id="regcom" style="">企业用户</span>
     <div class="login">已有账号，立即 <a href="/page/login">登录</a></div>
 </div>
 <!--个人用户-->
@@ -47,9 +46,11 @@
             </span>
                 <span class="regInput" id="userMamErr"></span>
             </li>
+
             <div node-type="layer" class="accountSearch" style="display:none;"
                  id="person_mail"></div>
-            <li>
+
+            <li class="regMb30">
                 <label><font>*</font> 登录密码：</label>
                 <span class="regM defaultBorder">
             	<input id="pwd" name="password" class="regInput" autocomplete="off" type="password"
@@ -58,10 +59,6 @@
             	<em></em>
             </span>
                 <span class="regInput" id="passwordErr"></span>
-            </li>
-            <li class="safetyLayer regPl191" id="pwdStrong">
-                <font style="font-size:12px;">安全程度：</font><em class="default">弱</em><em
-                    class="default">中</em><em class="default">强</em>
             </li>
 
             <li class="regMb30">
@@ -89,7 +86,7 @@
             <li class="regPl88">
 			<span class="regM" style="margin-left:29px">
 				<input id="AgreeId" name="AgreeId" type="checkbox" checked="" onclick="ckAgree();">
-				<a href="https://passport.e3mall.cn/xy.html" target="_blank" class="checkTitle">我已阅读并同意<font
+				<a href="javascript:void(0)" target="_blank" class="checkTitle">我已阅读并同意<font
                         style="font-size:12px;">《宜立方商城用户注册协议》</font></a>
 			</span>
                 <span id="AgreeIdErr"></span>
@@ -102,7 +99,7 @@
             <br/><br/>
         </form>
     </ul>
-    <div class="ui-reg-tip"><a href="http://help.e3mall.cn/140/6788.html" target="_blank">了解更多>></a>
+    <div class="ui-reg-tip">
     </div>
 </div>
 
@@ -111,19 +108,17 @@
 <!--footerStart-->
 <div class="footer">
 			<span>
-				<a href="http://www.e3mall.cn/www/379/5109.html" rel="nofollow" class="footerlink1">关于我们</a> | 
-				<a href="http://www.e3mall.cn/www/380/5116.html" rel="nofollow" class="footerlink1">联系我们</a> | 
-				<a href="http://www.e3mall.cn/www/381/5117.html" rel="nofollow" class="footerlink1">招聘人才</a> | 
-				<a href="http://www.e3mall.cn/www/330/2705.html" rel="nofollow" class="footerlink1">友情链接</a> | 
-				<a href="http://supplier.e3mall.cn/supplierApply" rel="nofollow"
+				<a href="javascript:void(0)" rel="nofollow" class="footerlink1">关于我们</a> |
+				<a href="javascript:void(0)" rel="nofollow" class="footerlink1">联系我们</a> |
+				<a href="javascript:void(0)" rel="nofollow" class="footerlink1">招聘人才</a> |
+				<a href="javascript:void(0)" rel="nofollow" class="footerlink1">友情链接</a> |
+				<a href="javascript:void(0)" rel="nofollow"
                    class="footerlink1">供应商申请</a>
 			</span>
     <p>
-        北京宜立方电子商务有限公司<br/>
+        青岛宜立方电子商务有限公司<br/>
         北京市公安局顺义分局备案11011302000890号|<a href="http://www.miibeian.gov.cn" target="_blank"
-                                       rel="nofollow" class="footerlink1">京ICP备12011349号</a>|<a
-            href="http://www.e3mall.cn/www/174/461.html" target="_blank" rel="nofollow"
-            class="footerlink1">企业营业执照</a><br/>
+                                       rel="nofollow" class="footerlink1">京ICP备12011349号</a><br/>
         Copyright© 宜立方商城 e3mall.cn 版权所有<br/>
     </p>
 </div>

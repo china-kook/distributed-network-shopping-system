@@ -23,8 +23,8 @@
 <!-- login_main -->
 <div class="login_main clear">
     <div class="pic">
-        <a href="http://www.e3mall.cn/html/activity/1472720729.html" target="_blank"><img
-                src="/images/06f42c372620f92b40da77a8b23cdf7f.png"></a>
+        <a href="javascript:void(0)" target="_blank"><img
+                src="/images/6aca76574372d473c8a07e38a0b32ca2.png"></a>
     </div>
     <!-- login -->
     <div class="login">
@@ -35,7 +35,7 @@
 
         <div class="login_box clear">
             <ul class="loginnav">
-                <li class="curr" mark="sfbest"><em></em>优选账号</li>
+                <li class="curr" mark="sfbest"><em></em>宜立方账号</li>
             </ul>
 
             <div class="logincon">
@@ -87,8 +87,7 @@
                         <div class="clear"></div>
                         <li>
                             <div style="width: 65px; margin-left: 260px;">
-                                <a href="https://passport.e3mall.cn/reg/findpass/?returnUrl=http://www.e3mall.cn"
-                                   class="forget-passWord">忘记密码?</a>
+
                             </div>
                         </li>
                         <li class="m-t5" id="btn_sub">
@@ -111,13 +110,13 @@
                 <li class="p-f10">
                     <h2 class="h2">合作网站账户登录：</h2>
                     <div>
-                        <a href="http://api2.e3mall.cn/unionlogin/qq/oauth/qq_login.php?returnUrl=http://www.e3mall.cn/"
+                        <a href="javascript:void(0)"
                            class="link">QQ</a>&nbsp;|&nbsp; <a
-                            href="https://api.weibo.com/oauth2/authorize?client_id=1800908332&amp;redirect_uri=https%3A%2F%2Fpassport.e3mall.cn%2Fcallback%2Fsina&amp;response_type=code&amp;state=&amp;display=?returnUrl=http://www.e3mall.cn/"
+                            href="javascript:void(0)"
                             class="link">新浪微博</a> &nbsp;|&nbsp; <a
-                            href="https://open.t.qq.com/cgi-bin/oauth2/authorize?client_id=801198099&amp;redirect_uri=https%3A%2F%2Fpassport.e3mall.cn%2Fcallback%2Fqq&amp;response_type=code&amp;type=?returnUrl=http://www.e3mall.cn/"
+                            href="javascript:void(0)"
                             class="link">腾讯微博</a> &nbsp;|&nbsp; <a
-                            href="http://api2.e3mall.cn/unionlogin/alipay.php?returnUrl=http://www.e3mall.cn/"
+                            href="javascript:void(0)"
                             class="link">支付宝</a>
                     </div>
                 </li>
@@ -128,18 +127,17 @@
 </div>
 <!-- /login_main -->
 <div class="footer">
-		<span> <a href="http://www.e3mall.cn/www/379/5109.html" rel="nofollow" class="footerlink1">关于我们</a> | <a
-                href="http://www.e3mall.cn/www/380/5116.html" rel="nofollow" class="footerlink1">联系我们</a> | <a
-                href="http://www.e3mall.cn/www/381/5117.html" rel="nofollow" class="footerlink1">招聘人才</a> | <a
-                href="http://www.e3mall.cn/www/330/2705.html" rel="nofollow" class="footerlink1">友情链接</a> | <a
-                href="http://supplier.e3mall.cn/supplierApply" rel="nofollow" class="footerlink1">供应商申请</a>
+		<span> <a href="javascript:void(0)" rel="nofollow" class="footerlink1">关于我们</a> | <a
+                href="javascript:void(0)" rel="nofollow" class="footerlink1">联系我们</a> | <a
+                href="javascript:void(0)" rel="nofollow" class="footerlink1">招聘人才</a> | <a
+                href="javascript:void(0)" rel="nofollow" class="footerlink1">友情链接</a> | <a
+                href="javascript:void(0)" rel="nofollow" class="footerlink1">供应商申请</a>
 		</span>
     <p>
-        北京宜立方电子商务有限公司<br> 北京市公安局顺义分局备案11011302000890号|<a href="http://www.miibeian.gov.cn"
+        青岛宜立方电子商务有限公司<br> 北京市公安局顺义分局备案11011302000890号|<a href="http://www.miibeian.gov.cn"
                                                          target="_blank" rel="nofollow"
-                                                         class="footerlink1">京ICP备12011349号</a>|<a
-            href="http://www.e3mall.cn/www/174/461.html" target="_blank" rel="nofollow"
-            class="footerlink1">企业营业执照</a><br> Copyright© 宜立方商城
+                                                         class="footerlink1">京ICP备12011349号</a>
+        <br>Copyright© 宜立方商城
         e3mall.cn 版权所有<br>
     </p>
 </div>

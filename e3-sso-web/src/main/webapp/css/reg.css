@@ -389,7 +389,7 @@ input::-ms-reveal {
 }
 
 .reg_main ul.individualUserBg {
-    background: url(/images/pic2.jpg) right 78px no-repeat;
+    background: url(/images/pic10.jpg) right 78px no-repeat;
 }
 
 .reg_main ul.individualUserBg li, .reg_main ul.individualUserBg1 li, .reg_main ul.enterpriseUsers li {
@@ -1572,7 +1572,6 @@ input::-ms-reveal {
     position: relative;
     left: -30px;
     width: 930px;
-    background: url(/images/reg_tip.png) no-repeat 25px 16px;
 }
 
 .ui-reg-tip a:link, .ui-reg-tip a:visited, .ui-reg-tip a:hover {

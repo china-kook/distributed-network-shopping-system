@@ -81,7 +81,7 @@ input {
 .clear {
   clear: both;
   line-height: 0;
-  height: 0;
+  height: 25px;
   font-size: 0; }
 
 .clearfix:after {
