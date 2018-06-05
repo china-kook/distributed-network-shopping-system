@@ -9,7 +9,7 @@
 
             <div class="index_topad" id="playLogo" style="">
                 <a href="/html/activity/1472179566.html" target="_blank">
-                    <img src="/images/html/20160829181637762.gif">
+                    <%--<img src="/images/html/20160829181637762.gif">--%>
                 </a>
             </div>
             <a name="sfbest_hp_hp_head_logo" href="http://www.e3mall.cn" class="trackref logoleft">
@@ -29,23 +29,23 @@
                 <input type="button" value="" class="submit" onclick="search_keys('searchForm')">
             </form>
             <div class="search_hot"><a target="_blank"
-                                       href="http://www.e3mall.cn/productlist/search?inputBox=1&amp;keyword=%E5%A4%A7%E9%97%B8%E8%9F%B9#trackref=sfbest_hp_hp_head_Keywords1">大闸蟹</a><a
+                                       href="javascript:void(0)">大闸蟹</a><a
                     target="_blank"
-                    href="http://www.e3mall.cn/productlist/search?inputBox=1&amp;keyword=%E7%9F%B3%E6%A6%B4#trackref=sfbest_hp_hp_head_Keywords2">石榴</a><a
+                    href="javascript:void(0)">石榴</a><a
                     target="_blank"
-                    href="http://www.e3mall.cn/productlist/search?inputBox=1&amp;keyword=%E6%9D%BE%E8%8C%B8#trackref=sfbest_hp_hp_head_Keywords3">松茸</a><a
+                    href="javascript:void(0)">松茸</a><a
                     target="_blank"
-                    href="http://www.e3mall.cn/productlist/search?inputBox=1&amp;keyword=%E7%89%9B%E6%8E%92#trackref=sfbest_hp_hp_head_Keywords4">牛排</a><a
+                    href="javascript:void(0)">牛排</a><a
                     target="_blank"
-                    href="http://www.e3mall.cn/productlist/search?inputBox=1&amp;keyword=%E7%99%BD%E8%99%BE#trackref=sfbest_hp_hp_head_Keywords5">白虾</a><a
+                    href="javascript:void(0)">白虾</a><a
                     target="_blank"
-                    href="http://www.e3mall.cn/productlist/search?inputBox=1&amp;keyword=%E5%85%A8%E8%84%82%E7%89%9B%E5%A5%B6#trackref=sfbest_hp_hp_head_Keywords6">全脂牛奶</a><a
+                    href="javascript:void(0)">全脂牛奶</a><a
                     target="_blank"
-                    href="http://www.e3mall.cn/productlist/search?inputBox=1&amp;keyword=%E6%B4%8B%E6%B2%B3#trackref=sfbest_hp_hp_head_Keywords7">洋河</a><a
+                    href="javascript:void(0)">洋河</a><a
                     target="_blank"
-                    href="http://www.e3mall.cn/productlist/search?inputBox=1&amp;keyword=%E7%BB%BF%E8%B1%86#trackref=sfbest_hp_hp_head_Keywords8">绿豆</a><a
+                    href="javascript:void(0)">绿豆</a><a
                     target="_blank"
-                    href="http://www.e3mall.cn/productlist/search?inputBox=1&amp;keyword=%E4%B8%80%E5%93%81%E7%8E%89#trackref=sfbest_hp_hp_head_Keywords9">一品玉</a>
+                    href="javascript:void(0)">一品玉</a>
             </div>
         </div>
         <div class="shopingcar" id="topCart">
